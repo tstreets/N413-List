@@ -1,0 +1,64 @@
+.questboard {
+    width: 725px;
+    background-color: #573d31;
+
+    display: flex;
+    flex-wrap: wrap;
+    padding: 24px;
+}
+
+.quest {
+    width: 200px;
+    height: 200px;
+
+    margin-right: 24px;
+    margin-bottom: 24px;
+
+    &[open] {
+        min-height: 450px;
+
+        .quest__summary::-webkit-details-marker {
+            color: #573d31;
+            font-size: 20px;
+        }
+    }
+
+    &__summary {
+        width: 200px;
+        height: 200px;
+        background-color: #cdb889;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        cursor: pointer;
+
+        &::-webkit-details-marker {
+            // style the arrow
+            padding: 4px;
+        }
+    }
+
+    &__image {
+        width: auto;
+        height: 150px;
+    }
+
+    &__description {
+        height: 200px;
+        padding: 24px;
+        background-color: #cdb889;
+
+        position: relative;
+        top: 8px;
+
+        overflow: scroll;
+    }
+
+    &__accept {
+        margin-top: 16px;
+        cursor: pointer;
+    }
+}

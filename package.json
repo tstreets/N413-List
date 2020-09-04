@@ -1,0 +1,13 @@
+{
+  "name": "list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "less:compile": "lessc assets/less/styles.less assets/css/styles.css",
+    "dumpautoload": "composer dumpautoload"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
