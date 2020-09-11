@@ -20,6 +20,15 @@ body {
   margin-right: 24px;
   margin-bottom: 24px;
 }
+.quest[data-col="2"] .quest__description {
+  margin-left: -224px;
+}
+.quest[data-col="1"] .quest__description {
+  margin-left: 0px;
+}
+.quest[data-col="0"] .quest__description {
+  margin-left: -448px;
+}
 .quest[open] {
   min-height: 450px;
 }
@@ -40,19 +49,25 @@ body {
 .quest__summary::-webkit-details-marker {
   padding: 4px;
 }
+.quest__title {
+  font-size: 20px;
+}
 .quest__image {
   width: auto;
   height: 150px;
 }
 .quest__description {
+  width: 650px;
   height: 200px;
   padding: 24px;
   background-color: #cdb889;
   position: relative;
   top: 8px;
-  overflow: scroll;
+  overflow: hidden;
+  font-size: 18px;
 }
 .quest__accept {
+  display: block;
   margin-top: 16px;
-  cursor: pointer;
+  padding: 5px;
 }

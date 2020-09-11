@@ -14,6 +14,18 @@
     margin-right: 24px;
     margin-bottom: 24px;
 
+    &[data-col = "2"] &__description {
+        margin-left: -224px;
+    }
+
+    &[data-col = "1"] &__description {
+        margin-left: 0px;
+    }
+
+    &[data-col = "0"] &__description {
+        margin-left: -448px;
+    }
+
     &[open] {
         min-height: 450px;
 
@@ -41,12 +53,17 @@
         }
     }
 
+    &__title {
+        font-size: 20px;
+    }
+
     &__image {
         width: auto;
         height: 150px;
     }
 
     &__description {
+        width: 650px;
         height: 200px;
         padding: 24px;
         background-color: #cdb889;
@@ -54,11 +71,13 @@
         position: relative;
         top: 8px;
 
-        overflow: scroll;
+        overflow: hidden;
+        font-size: 18px;
     }
 
     &__accept {
+        display: block;
         margin-top: 16px;
-        cursor: pointer;
+        padding: 5px;
     }
 }
